@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "794838543675",
+    "project_id": "inas-project-32aec",
+    "storage_bucket": "inas-project-32aec.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794838543675:android:1ccf3e1dfb9130aeb61b1e",
+        "android_client_info": {
+          "package_name": "com.example.inasproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794838543675-c0kh1okcn3uhi91gd9t521e498bo4m79.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.inasproject",
+            "certificate_hash": "79dbbf9f185882818261db62bb6a2962aec93d20"
+          }
+        },
+        {
+          "client_id": "794838543675-776q0usavm9f5f2qmsbb90smf7ndvd71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa3JhyrO1Q6wKrMqK_xX9ZO4XrdAKbHpI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794838543675-776q0usavm9f5f2qmsbb90smf7ndvd71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
