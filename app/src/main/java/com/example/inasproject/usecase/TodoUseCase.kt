@@ -26,4 +26,21 @@ class TodoUseCase {
             )
         }
     }
+
+    suspend fun createTodo(todo: Todo): Todo {
+        try {
+            val payload = hashMapOf(
+                "title" to todo.title,
+                "description" to todo.description
+            )
+
+            val data = db.collection("todo")
+                .add(payload)
+                .await()
+
+            return todo.copy(id = data.id)
+        } catch (exc: Exception) {
+            throw Exception("Gagal menyimpan data ke firestore")
+        }
+    }
 }

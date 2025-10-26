@@ -1,5 +1,6 @@
 package com.example.inasproject
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -34,6 +35,13 @@ class InasActivity : AppCompatActivity() {
 
         setupRecyclerView()
         initializedData()
+        registerEvents()
+    }
+
+    fun registerEvents() {
+        activityBinding.tombolTambah.setOnClickListener {
+            toCreateTodoPage()
+        }
     }
 
     fun setupRecyclerView() {
@@ -55,4 +63,9 @@ class InasActivity : AppCompatActivity() {
         }
     }
 
+    fun toCreateTodoPage() {
+        val intent = Intent(this, CreateTodoActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
 }
